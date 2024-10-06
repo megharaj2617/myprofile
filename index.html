@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complex Layout Example</title>
+    <style>
+     
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+
+      
+      body,
+      html {
+        height: 100%;
+      }
+
+
+     
+      .header {
+        background-color: pink;
+        height: 9vh; 
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+
+     
+      .main {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        height: 91vh;
+      }
+
+
+      .sideblocks1 > div {
+        background-color: gray;
+        height: 33.33%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ddd;
+        color: white;
+      }
+
+
+      
+      .block2 {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ddd;
+      }
+
+
+      .sideblocks2 > div {
+        background-color: #f9c60c;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ddd;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="header">MY PROFILE</div>
+
+
+    
+    <div class="main">
+     
+      <div class="sideblocks1">
+        <div>
+          HOBBIES:Playing Cricket
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="https://www.zomato.com/" target="_blank" rel="noopener noreferrer" >zomato</a>
+            </li>
+            <li>
+              <a href="https://www.bvoccollege.com/" target="_blank" rel="noopener noreferrer" >b.voc</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a href="https://www.themediaant.com/blog/10-best-cricket-creative-ad-campaigns/"><img src="https://i0.wp.com/www.agencyreporter.com/wp-content/uploads/2019/02/1-5.jpg?fit=1037%2C603&ssl=1" style="width:100%;height:100%;"></a>
+          </div>
+      </div>
+
+
+      
+      <div class="block2">
+
+        <pre>
+          <h1>NAME:MEGHARAJ.N.H</h1>
+          <H1>COURSE:B.Voc</H1>
+          <h1>D.O.B:17/05/2005</h1>
+          <H1>ADDRESS:HASSAN</H1>
+          <H1>PHO.NO:7411165610</H1>
+        </pre>
+      </div>
+
+
+      
+      <div class="sideblocks2">
+        <div><img src="1.jpg" height="100%" width="100%" alt=""></div>
+        <div>
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KPu7cc30f-Q?si=zrxIfp8wfcZuQ8Oz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>  
+      </div>
+    </div>
+  </body>
+</html>
